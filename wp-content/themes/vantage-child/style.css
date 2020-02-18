@@ -1,0 +1,395 @@
+/*
+Theme Name: Theme enfant vantage
+Author: Matanna
+Template: vantage
+*/
+
+@font-face {
+    font-family: 'audreyregular';
+    src: url('typo_audrey/audrey-normal-webfont.eot');
+    src: url('typo_audrey/audrey-normal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('typo_audrey/audrey-normal-webfont.woff2') format('woff2'),
+         url('typo_audrey/audrey-normal-webfont.woff') format('woff'),
+         url('typo_audrey/audrey-normal-webfont.ttf') format('truetype'),
+         url('typo_audrey/audrey-normal-webfont.svg#audreyregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Largeur de la page à 100% */
+body.responsive.layout-full #page-wrapper .full-container{
+	max-width: 100%;
+}
+
+ body #masthead .hgroup{
+	padding-bottom: 0px;
+	 padding-top: 5px;
+}
+
+/* modif font menu */
+.main-navigation{
+	box-shadow: 3px 3px 8px #2F3033;
+}
+
+/*modif icones reseaux socio*/
+body .widget_vantage-social-media .social-media-icon.social-media-icon-facebook, body .widget_vantage-social-media .social-media-icon.social-media-icon-twitter, body .widget_vantage-social-media .social-media-icon.social-media-icon-instagram{
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #2f3033), color-stop(1, #1d1f1e));
+	border: 1px solid #1d1f1e;
+}
+
+/*modif logo*/
+body #masthead .hgroup .logo img{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#masthead .hgroup .support-text{
+	top: 20%;
+}
+
+@media (max-width: 680px){
+	body.responsive #masthead .hgroup .support-text, body.responsive #masthead .hgroup #header-sidebar {
+		margin-top: 0px;
+		margin-bottom: 10px;
+	}
+}
+
+.main-navigation ul li {
+	font-family: 'audreyregular';
+	letter-spacing: 0.07em;
+}
+
+.main-navigation ul li a:hover{
+	text-shadow: 2px 2px 1px black;
+}
+
+/* mise en forme bannière */
+h1.titre_banniere, .titre_page_accueil{
+	font-family: 'audreyregular';
+	letter-spacing: 0.07em;
+	font-size: 2px;
+}
+
+.chaletsetcaviar{
+	font-family: 'audreyregular';
+	letter-spacing: 0.07em;
+	font-size: 40px;
+}
+
+#main {
+	padding: 0px;
+}
+
+.paragraphe_accueil{
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: justify;
+}
+
+/*modif bouton accueil*/
+.bouton_home a:hover{
+	opacity: 0.7;
+}
+
+body .sow-carousel-wrapper ul.sow-carousel-items li.sow-carousel-item h3{
+	color: #1d1f1e;
+}
+
+/*modif margin des titres*/
+.entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6 {
+	margin: 0.5em ;
+}
+
+.contact_footer{
+	text-align: center;
+}
+
+/*modif page contact*/
+.titre_contact{
+	padding-top: 30px;
+}
+
+.entete_contact{
+	text-align: center;
+}
+
+.bloc_banniere_contact{
+	max-width: 1000px;
+	margin: auto;
+}
+
+.formulaire_contact{
+	max-width:400px;
+	background-color: rgba(240,236,231,0.9);
+	padding: 20px;
+	margin: 30px;
+	box-shadow: 3px 3px 3px #2F3033;
+	color: #2F3033;
+}
+#wpforms-439-field_1, #wpforms-439-field_2, #wpforms-439-field_3, #wpforms-439-field_4, #wpforms-439-field_5, #wpforms-439-field_6, #wpforms-439-field_7, #wpforms-submit-439{
+	background-color: rgba(255,255,255,0.9);
+	font-size: 12px;
+	color: #1d1f1e;
+	width: 100%;
+}
+
+.wpforms-field-label-inline{
+	color: #2f3033;
+}
+
+#wpforms-submit-439{
+	border: 1px solid black;
+}
+
+.formulaire_coordonnees{
+	max-width: 400px;
+	background-color: rgba(240,236,231,0.9);
+	margin: 30px;
+	padding: 20px;
+	color: #2f3033;
+	font-size: 15px;
+	
+}
+
+@media screen and (max-width: 640px){
+	.formulaire_contact{
+		max-width: 100%;
+		width: 100%;
+		margin: 10px 0px 10px 0px;
+	}
+}
+
+/*mise en forme des pages d'archives*/
+#container_chalet {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#container_chalet article {
+	width: 46%;
+	margin: 2%;
+	color: #1d1f1e;
+	text-align: center;
+}
+
+.container_post_chalet{
+	position: relative;
+}
+
+.container_post_chalet a{
+	border: 5px solid #f0ece7;
+	box-shadow: 0px 0px 6px #2f3033;
+}
+
+article.post, article.page{
+	border-bottom: 2px solid rgba(47,48,51,0.5);
+}
+
+.container_acf_nom{
+	position: absolute;
+	width: 100%;
+	top: 20px;
+}
+
+.nom_chalet{
+	font-size: 2.3em;
+	background-color: rgba(240,236,231,0.7);
+	color: #1d1f1e;
+	font-family: audreyregular;
+	width: 50%;
+	margin: auto;
+}
+
+.container_acf_prix{
+	position: absolute;
+	width: 100%;
+	bottom: 20px;
+}
+
+.prix{
+	font-size: 2.3em;
+	background-color: rgba(240,236,231,0.7);
+	color: #1d1f1e;
+	width: 50%;
+	margin: auto;
+}
+@media screen and (max-width: 640px){
+	.nom_chalet, .prix{
+		font-size: 1em;
+	}
+	#container_chalet{
+		flex-direction: column;
+	}
+	#container_chalet article{
+		width: 96%;
+	}
+} 
+/*mise en forme publication chalet seul*/
+#container_single_chalet{
+	color: #1d1f1e;
+	display: flex;
+	padding: 30px 0px 0px 0px;
+	min-height: 500px;
+	width: 100%;
+}
+
+#container_single_chalet_details{
+	margin: 1%;
+	width: 30%;
+}
+
+#container_single_details{
+	background-color: #f0ece7;
+	padding: 20px;
+	box-shadow: 0px 0px 6px #2f3033;
+}
+
+#container_single_details p, #container_single_details li, #titre_publication{
+	background-color: #2f3033;
+	color: #f0ece7;
+	box-shadow: 0px 0px 6px #2f3033;
+}
+
+#titre_publication{
+	font-family: 'audreyregular';
+	font-size: 2.5em;
+	margin-bottom: 20px;
+	padding: 5px;
+}
+
+#container_single_details p, #container_single_details li{
+	font-size: 1.3em;
+	list-style: none;
+	padding: 5px;
+}
+
+#container_single_details ul{
+	margin: 0px;
+}
+
+#affichage_prix{
+	font-size: 2.5em;
+	font-weight: bold;
+	width: 50%;
+	background-color: rgb(47,48,51);
+	color: #f0ece7;
+	text-align: center;
+	margin-top: 50px;
+	border: 5px solid #f0ece7;
+	box-shadow: 0px 0px 6px #2f3033;
+}
+
+#semaine{
+	font-weight: normal;
+	font-size: 0.5em;
+}
+
+.lien_contact_retour{
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.lien_contact, .lien_retour{
+	font-size: 1.2em;
+	text-align: center;
+	background-color: #f0ece7;
+	padding: 10px 20px 10px 20px;
+	border-radius: 5px;
+	border: 1px solid #2f3033;
+	box-shadow: 0px 0px 6px #2f3033;
+}
+
+.lien_contact a, .lien_retour a{
+	color: #1d1f1e;
+	text-decoration: none;
+}
+
+.lien_contact:hover, .lien_retour:hover{
+	background-color: #2f3033;
+}
+
+.lien_contact a:hover, .lien_retour a:hover{
+		color: #f0ece7;
+}
+
+@media screen and (max-width: 640px){
+	#container_single_chalet{
+		flex-direction: column;
+	}
+	#container_single_chalet_details{
+		width: 100%;
+	}
+	#titre_publication, #container_single_details p, #affichage_prix,.lien_contact, .lien_retour{
+		font-size: 1em;
+	}
+	.lien_contact_retour{
+		flex-direction: column;
+	}
+	.lien_contact, .lien_retour{
+		padding: 0px;
+		margin: 10px;
+	}
+	#container_single_details ul{
+		margin: 0em;
+	}
+	#container_single_details li{
+		font-size: 0.75em;
+	}
+	#container_single_chalet_details{
+		margin: 0%;
+	}
+}
+
+#container_single_chalet_photo{
+	width: 68%;
+}
+
+#container_single_photo{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#container_single_photo .post_image{
+	width: 45%;
+	margin: 15px;
+}
+#container_single_photo img{
+	width: 90%;
+	border: 5px solid #f0ece7;
+	box-shadow: 0px 0px 6px #2f3033;
+}
+
+@media screen and (max-width: 640px){
+	#container_single_photo{
+		flex-direction: column;
+	}
+	#container_single_chalet_photo{
+	width: 100%;
+	}
+	#container_single_photo .post_image{
+		width: 100%;
+	}
+}
+
+/*Mise en forme lien backoffice*/
+#connect{
+	position: relative;
+	text-align: left;
+	bottom: 60px;
+	left: 15px;
+}
+
+#connect a{
+	color: #0fece7;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 640px){
+	#connect{
+		left: 15px;
+		bottom: 20px;
+	}
+}
